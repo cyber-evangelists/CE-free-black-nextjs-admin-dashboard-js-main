@@ -1,3 +1,4 @@
+'use client';
 import {
   Typography,
   Box,
@@ -7,10 +8,9 @@ import {
   styled
 } from '@mui/material';
 import BaseLayout from 'src/layouts/BaseLayout';
-
+import { Watermark } from 'watermark-js-plus';
 import Link from 'src/components/Link';
 import Head from 'next/head';
-
 import Logo from 'src/components/LogoSign';
 import Hero from 'src/content/Overview/Hero';
 
@@ -34,6 +34,40 @@ const OverviewWrapper = styled(Box)(
 );
 
 function Overview() {
+
+ if(typeof window !== "undefined"){
+  const watermark = new Watermark({
+    content: 'Cyberevangelists.com',
+    width: 200,
+    height: 200,
+    rotate: 22,
+    layout: 'grid',
+    gridLayoutOptions: {
+      rows: 2,
+      cols: 2,
+      gap: [20, 20],
+      matrix: [[1, 0], [0, 1]]
+    },
+    advancedStyle: {
+      type: 'linear',
+      colorStops: [
+        {
+          offset: 0,
+          color: 'grey'
+        },
+        {
+          offset: 1,
+          color: 'grey'
+        }
+      ]
+    },
+    onSuccess: () => {
+      // success callback
+    }
+  })
+  watermark.create();
+ }
+
   return (
     <OverviewWrapper>
       <Head>
@@ -72,7 +106,7 @@ function Overview() {
             href="https://cyberevangelists.com"
             target="_blank"
             rel="noopener noreferrer"
-            style={{padding: "5px"}}
+            style={{ padding: '5px' }}
           >
             cyberevangelists.com
           </Link>

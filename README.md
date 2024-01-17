@@ -4,7 +4,7 @@
     </a>
 </p>
 <h1 align="center">
-    <b>cyberevangelists Free Black Javascript Next.js Admin Dashboard</b>
+    <b>Cyber Evangelists Free Black Javascript Next.js Admin Dashboard</b>
     <br>
     <a href="https://twitter.com/cyevangelists">
         <img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" />

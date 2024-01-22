@@ -11,9 +11,10 @@
     </a>
 </h1>
 <div align="center">
-
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+    <img src="./public/images/1.png" alt="Sample Image 1">
+    <img src="./public/images/2.png" alt="Sample Image 1">
+    <img src="./public/images/3.png" alt="Sample Image 2">
+    <img src="./public/images/4.png" alt="Sample Image 2">
 </div>
 
 <h3>Free Material-UI Next.js Javascript Dashboard Template with Dark Color Scheme</h3>
